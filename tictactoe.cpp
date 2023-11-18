@@ -73,6 +73,7 @@ void display(){
   }
   else if(digit>9 || digit<1){
     cout<<"INVALID MOVE !!!"<<endl;
+    display();
   }
   if(turn=='x' && arr[row][column]!='x' && arr[row][column]!='o'){
     arr[row][column]='x';
