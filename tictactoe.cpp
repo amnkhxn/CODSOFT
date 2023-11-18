@@ -84,7 +84,7 @@ void display(){
     turn='x';
   }
   else {
-    cout<<"There is occupied space!!"<<endl;
+    cout<<"This is an occupied space!!"<<endl;
     display();
   }
 }
