@@ -164,17 +164,5 @@ int main(){
   cout<<"1 for yes , 0 for no"<<endl;
   cin>>rematch;
   }
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
+      
+}
