@@ -111,7 +111,7 @@ bool windraw(){
       }
     }
     tie=1;
-    return 0;
+    return 1;
   
 }
 
@@ -164,5 +164,17 @@ int main(){
   cout<<"1 for yes , 0 for no"<<endl;
   cin>>rematch;
   }
-      
-}
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
