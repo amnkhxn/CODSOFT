@@ -13,7 +13,13 @@ void calculate(int a,int b){
     break;
     case '*' :cout<<"The answer is "<<a*b<<endl;
     break;
-    case '/' :cout<<"The answer is "<<a/b<<endl;
+    case '/' :
+      if(b!=0){
+      cout<<"The answer is "<<a/b<<endl;
+      }
+      else{
+        cout<<"Error"<<endl;
+      }
     break;
     default: cout<<"Enter a valid operation"<<endl;
   }
