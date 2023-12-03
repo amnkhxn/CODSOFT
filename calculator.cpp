@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//Compiler version g++ 6.3.0
+
 void calculate(int a,int b){
   cout<<"Enter an operation"<<endl;
   char x;
@@ -27,6 +27,8 @@ void calculate(int a,int b){
 int main()
 {
     int a,b;
+    cout<<"CALCULATOR"<<endl;
+    cout<<endl;
     cout<<"Enter first number:"<<endl;
     cin>>a;
     cout<<"Enter second number:"<<endl;
