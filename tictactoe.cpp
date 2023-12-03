@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//Compiler version g++ 6.3.0
+
 char arr[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 char turn='x';
 int row,column;
@@ -35,46 +35,44 @@ void display(){
     cout<<"Enter the position you want to play "<<n2<<endl;
     cin>>digit;
   }
+  if(digit>=1 && digit<=9){
   if(digit==1){
     row=0;
     column=0;
   }
-  if(digit==2){
+  else if(digit==2){
     row=0;
     column=1;
   }
-  if(digit==3){
+  else if(digit==3){
     row=0;
     column=2;
   }
-  if(digit==4){
+  else if(digit==4){
     row=1;
     column=0;
   }
-  if(digit==5){
+  else if(digit==5){
     row=1;
     column=1;
   }
-  if(digit==6){
+  else if(digit==6){
     row=1;
     column=2;
   }
-  if(digit==7){
+ else if(digit==7){
     row=2;
     column=0;
   }
-  if(digit==8){
+ else if(digit==8){
     row=2;
     column=1;
   }
-  if(digit==9){
+  else if(digit==9){
     row=2;
     column=2;
   }
-  else if(digit>9 || digit<1){
-    cout<<"INVALID MOVE !!!"<<endl;
-    display();
-  }
+  
   if(turn=='x' && arr[row][column]!='x' && arr[row][column]!='o'){
     arr[row][column]='x';
     turn='o';
@@ -83,8 +81,12 @@ void display(){
     arr[row][column]='o';
     turn='x';
   }
-  else {
+  else{
     cout<<"This is an occupied space!!"<<endl;
+    display();
+  } }
+  else{
+    cout<<"INVALID MOVE !!!"<<endl;
     display();
   }
 }
@@ -131,12 +133,14 @@ tie=0;
 // main function 
 int main(){
  
-  
+  cout<<"TIC TAC TOE"<<endl;
+  cout<<endl;
   cout<<"Enter first player name:"<<endl;
   cin>>n1;
   cout<<"Enter the second player name:"<<endl;
   cin>>n2;
   cout<<n1<<" will play first as x"<<endl;
+  cout<<n2<<" will play second as o"<<endl;
   
   bool rematch=1;
   while(rematch){
@@ -144,7 +148,7 @@ int main(){
   
   
   while(!windraw()){
-    board();
+    board();    
     display();
     windraw();
     
@@ -165,16 +169,8 @@ int main(){
   cin>>rematch;
   }
   
+  };
+  cin>>rematch;
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
+  }
